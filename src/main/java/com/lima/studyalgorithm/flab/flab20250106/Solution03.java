@@ -1,4 +1,4 @@
-package com.lima.studyalgorithm.flab20250106;
+package com.lima.studyalgorithm.flab.flab20250106;
 
 /*
 https://leetcode.com/problems/first-missing-positive/description/

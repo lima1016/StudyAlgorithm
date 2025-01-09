@@ -1,4 +1,4 @@
-package com.lima.studyalgorithm.flab20250106;
+package com.lima.studyalgorithm.flab.flab20250106;
 
 /*
 https://leetcode.com/problems/jump-game-ii/description/
@@ -26,27 +26,31 @@ public int jump(int[] nums) {
  */
 public class Solution01 {
 
-  // TODO: Test case 42번에서 막힌 상태
   public int jump(int[] nums) {
-    int endIndex = nums.length - 1;
-    int endValue = nums[endIndex];
+    int length = nums.length;
     int count = 0;
+    int currentIndex = 0;
+    int endIndex = 0;
 
-    if (nums.length != 1) {
-      for (int i = 0; i < nums.length - 1; i++) {
-        int start = nums[i];
-        int jumpIndex = i + start;
+    if (length == 1) {
+      return count;
+    }
 
+    for (int i = 0; i < length - 1; i++) {
+      endIndex = Math.max(endIndex, i + nums[i]);
+
+      // 점프한 인덱스 끝에 도달
+      if (i == currentIndex) {
         count++;
-        if (jumpIndex < nums.length) {
-          if (nums[jumpIndex] == endValue && jumpIndex == endIndex) {
-            break;
-          }
-        } else {
-          break;
-        }
+        currentIndex = endIndex;
+      }
+
+      // 마지막 인덱스에 도달함
+      if (currentIndex >= length - 1) {
+        break;
       }
     }
+
     // 최종 결과는 i + nums[i] 값이 nums[n-1] 값이여야함
     return count;
   }
