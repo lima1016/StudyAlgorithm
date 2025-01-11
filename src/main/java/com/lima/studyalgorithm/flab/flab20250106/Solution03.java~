@@ -56,7 +56,8 @@ public class Solution03 {
     int n = nums.length;
 
     // Place each positive integer i at index i-1 if possible
-    for (int i = 0; i < n; i++) {           // 자기 자리인지확인 값 = 인덱스-1 (본인자리임)
+    // [-1, 3333, 3, 1]
+    for (int i = 0; i < n; i++) {         // i = 2/3 != 3
       while (nums[i] > 0 && nums[i] <= n && nums[i] != nums[nums[i] - 1]) {
         swap(nums, i, nums[i] - 1);
       }
