@@ -24,7 +24,7 @@ public int jump(int[] nums) {
 	// implementation
 }
  */
-public class Solution01 {
+public class 점프인덱스찾기 {
 
   public int jump(int[] nums) {
     int length = nums.length;
@@ -56,7 +56,7 @@ public class Solution01 {
   }
 
   public static void main(String[] args) {
-    Solution01 solution01 = new Solution01();
+    점프인덱스찾기 점프인덱스찾기 = new 점프인덱스찾기();
     // nums[index]는 앞으로 점프할 수 있는 최대 길이
 //    int[] nums1 = {2, 1};
 //    System.out.println("expected: 1, result: " + solution01.jump(nums1));
@@ -73,6 +73,6 @@ public class Solution01 {
 //    int[] nums7 = {1,2,3};
 //    System.out.println("expected: 2, result: " + solution01.jump(nums7));
     int[] nums8 = {1,2,1,1,1};
-    System.out.println("expected: 3, result: " + solution01.jump(nums8));
+    System.out.println("expected: 3, result: " + 점프인덱스찾기.jump(nums8));
   }
 }

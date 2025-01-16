@@ -1,7 +1,5 @@
 package com.lima.studyalgorithm.flab.flab20250106;
 
-import java.util.Arrays;
-
 /*
 https://leetcode.com/problems/first-missing-positive/description/
 정렬되지 않은 배열 nums가 주어졌을 때, 정수 양수 중 배열에 포함되어있지 않은 최소 숫자를 리턴하세요.
@@ -26,7 +24,7 @@ public int firstMissingPositive(int[] nums) {
 	// implementation
 }
  */
-public class Solution03 {
+public class 자리교체정렬 {
 
 //  public int firstMissingPositive(int[] nums) {
 //    int[] filteredNums = Arrays.stream(nums).filter(n -> n > 0).toArray();
@@ -74,8 +72,8 @@ public class Solution03 {
   }
 
   public static void main(String[] args) {
-    Solution03 solution03 = new Solution03();
+    자리교체정렬 자리교체정렬 = new 자리교체정렬();
     int[] nums = {3,3333,8,1, 2, 4, 5, 555555, 99};
-    System.out.println(solution03.firstMissingPositive(nums));
+    System.out.println(자리교체정렬.firstMissingPositive(nums));
   }
 }

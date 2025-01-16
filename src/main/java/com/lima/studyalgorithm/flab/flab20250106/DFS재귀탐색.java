@@ -30,7 +30,7 @@ public boolean possibleBipartition(int n, int[][] dislikes) {
 	}
 
  */
-public class Solution02DFS {
+public class DFS재귀탐색 {
 
   public boolean possibleBipartition(int n, int[][] dislikes) {
     List<Integer>[] graph = new List[n + 1];
@@ -72,12 +72,12 @@ public class Solution02DFS {
 
 
   public static void main(String[] args) {
-    Solution02DFS solution02DFS = new Solution02DFS();
+    DFS재귀탐색 DFS재귀탐색 = new DFS재귀탐색();
 //    int n = 10;
     int n = 3;
 //    int[][] dislikes = {{1, 2}, {3, 4}, {5, 6}, {6, 7}, {8, 9}, {7, 8}};
     int[][] dislikes = {{1, 2}, {1, 3}, {2, 3}};
 
-    System.out.println(solution02DFS.possibleBipartition(n, dislikes));
+    System.out.println(DFS재귀탐색.possibleBipartition(n, dislikes));
   }
 }
